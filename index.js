@@ -42,6 +42,9 @@ menuItems.forEach(item => {
 });
 const openTM = () => {
     themeModal.style.display = 'grid';
+setTimeout(() => {
+    themeModal.style.display = 'none';
+}, 2000);
 }
 const closeTM = (e) => {
     if(e.target.classList.contains('customize-theme')){ // Corrected selector: 'customize-theme' instead of '.customize-theme'
